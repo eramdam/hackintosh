@@ -1,5 +1,14 @@
 # Hackintosh
-Various hackintosh configuration files (OpenCore)
+
+This is a git repo of my [OpenCore](https://github.com/acidanthera/OpenCorePkg) EFI folder.
+Everything was made by following the (excellent) [OpenCore Vanilla Guide](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/).
+
+As far as I can tell everything works like on a real Mac. I haven't tested Sidecar just yet but I'm not expecting too many issues.
+
+## Screenshots galore
+
+![](meta/about-mac-screenshot.png)
+![](meta/neofetch-screenshot.png)
 
 ## Hardware configuration
 
