@@ -3,7 +3,11 @@
 This is a git repo of my [OpenCore](https://github.com/acidanthera/OpenCorePkg) EFI folder.
 Everything was made by following the (excellent) [OpenCore Vanilla Guide](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/).
 
+Shout out to MykolaG on the r/Hackintosh Discord for their help with [Windows booting](https://github.com/eramdam/hackintosh/commit/d15d29f647c305db44c1188222cbd3f53f172deb) and [Apple RTC issue on poweroff](https://github.com/eramdam/hackintosh/commit/c1922b0f254289a8ac59ce65211f1624583b1a4e). 
+
 As far as I can tell everything works like on a real Mac. I haven't tested Sidecar just yet but I'm not expecting too many issues.
+
+Feel free to re-use this configuration if you have the same CPU + motherboard combo and an AMD GPU. 
 
 ## Screenshots galore
 
