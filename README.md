@@ -14,6 +14,38 @@ Feel free to re-use this configuration if you have the same CPU + motherboard co
 ![](meta/about-mac-screenshot.png)
 ![](meta/neofetch-screenshot.png)
 
+## USB Ports
+
+Generated a `USBPorts.kext` using Hackintool. As far as I can tell, this covers all the ports on the build and I didn't have to exclude any of them.
+
+The ports list of ports looks like this
+
+```
+- HS01: FRONT CASE TYPE-C - USB2
+- HS02: REAR TYPE-C - USB2
+- HS03: BOTTOM RIGHT USB3 (RED) - USB2
+- HS04: BOTTOM LEFT USB3 (RED) - USB2
+- HS05: REAR USB2 RIGHT
+- HS06: REAR USB2 LEFT
+- HS07: TOP RIGHT USB3 (BLUE) - USB2
+- HS08: TOP LEFT USB3 (BLUE) - USB2
+- HS09: FRONT CASE USB3 - USB2
+- HS11: INTERNAL AIR COOLER (NZXT)
+- HS13: INTERNAL AURA MOTHERBOARD (ASUS)
+- HS14: INTERNAL BT/WIFI CARD (DELL)
+- SS01: FRONT CASE TYPE-C - USB3 - ORIENTATION 1
+- SS02: FRONT CASE TYPE-C - USB3 - ORIENTATION 2
+- SS03: BOTTOM RIGHT USB3 (RED)
+- SS04: BOTTOM LEFT USB3 (RED)
+- SS05: REAR TYPE-C - USB3 - ORIENTATION 1
+- SS06: REAR TYPE-C - USB3 - ORIENTATION 2
+- SS07: TOP RIGHT USB3 (BLUE)
+- SS08: TOP LEFT USB3 (BLUE)
+- SS09: FRONT CASE USB3 - USB3
+```
+
+
+
 ## Hardware configuration
 
 [PCPartPicker Part List](https://pcpartpicker.com/list/cqKD7T)
