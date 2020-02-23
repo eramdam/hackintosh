@@ -62,4 +62,3 @@ Type|Item
 **Case** | [NZXT H210 Mini ITX Tower Case](https://pcpartpicker.com/product/x7hmP6/nzxt-h210-mini-itx-tower-case-ca-h210b-w1)
 **Power Supply** | [EVGA SuperNOVA G2 650 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/9q4NnQ/evga-power-supply-220g20650y1)
 **Custom** | [OEM Dell Wireless DW1560 802.11ac Broadcom BCM94352Z M.2 NGFF WIFI Card 6XRYC](https://pcpartpicker.com/product/fM4NnQ/oem-dell-wireless-dw1560-80211ac-broadcom-bcm94352z-m2-ngff-wifi-card-6xryc)
- 
