@@ -429,9 +429,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
+				<string></string>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
+				<string>USBPorts.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
