@@ -5,46 +5,7 @@ Everything was made by following the (excellent) [OpenCore Vanilla Guide](https:
 
 Shout out to MykolaG on the r/Hackintosh Discord for their help with [Windows booting](https://github.com/eramdam/hackintosh/commit/d15d29f647c305db44c1188222cbd3f53f172deb) and [Apple RTC issue on poweroff](https://github.com/eramdam/hackintosh/commit/c1922b0f254289a8ac59ce65211f1624583b1a4e). 
 
-As far as I can tell everything works like on a real Mac. I haven't tested Sidecar just yet but I'm not expecting too many issues.
-
 Feel free to re-use this configuration if you have the same CPU + motherboard combo and an AMD GPU. 
-
-## Screenshots galore
-
-![](meta/about-mac-screenshot.png)
-![](meta/neofetch-screenshot.png)
-
-## USB Ports
-
-Generated a `USBPorts.kext` using Hackintool. As far as I can tell, this covers all the ports on the build and I didn't have to exclude any of them.
-
-The ports list of ports looks like this
-
-```
-- HS01: FRONT CASE TYPE-C - USB2
-- HS02: REAR TYPE-C - USB2
-- HS03: BOTTOM RIGHT USB3 (RED) - USB2
-- HS04: BOTTOM LEFT USB3 (RED) - USB2
-- HS05: REAR USB2 RIGHT
-- HS06: REAR USB2 LEFT
-- HS07: TOP RIGHT USB3 (BLUE) - USB2
-- HS08: TOP LEFT USB3 (BLUE) - USB2
-- HS09: FRONT CASE USB3 - USB2
-- HS11: INTERNAL AIR COOLER (NZXT)
-- HS13: INTERNAL AURA MOTHERBOARD (ASUS)
-- HS14: INTERNAL BT/WIFI CARD (DELL)
-- SS01: FRONT CASE TYPE-C - USB3 - ORIENTATION 1
-- SS02: FRONT CASE TYPE-C - USB3 - ORIENTATION 2
-- SS03: BOTTOM RIGHT USB3 (RED)
-- SS04: BOTTOM LEFT USB3 (RED)
-- SS05: REAR TYPE-C - USB3 - ORIENTATION 1
-- SS06: REAR TYPE-C - USB3 - ORIENTATION 2
-- SS07: TOP RIGHT USB3 (BLUE)
-- SS08: TOP LEFT USB3 (BLUE)
-- SS09: FRONT CASE USB3 - USB3
-```
-
-
 
 ## Hardware configuration
 
@@ -62,3 +23,72 @@ Type|Item
 **Case** | [NZXT H210 Mini ITX Tower Case](https://pcpartpicker.com/product/x7hmP6/nzxt-h210-mini-itx-tower-case-ca-h210b-w1)
 **Power Supply** | [EVGA SuperNOVA G2 650 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/9q4NnQ/evga-power-supply-220g20650y1)
 **Custom** | [OEM Dell Wireless DW1560 802.11ac Broadcom BCM94352Z M.2 NGFF WIFI Card 6XRYC](https://pcpartpicker.com/product/fM4NnQ/oem-dell-wireless-dw1560-80211ac-broadcom-bcm94352z-m2-ngff-wifi-card-6xryc)
+
+## What works
+
+- Sleep
+- Audio 
+- Ethernet
+- Bluetooth 
+- Wi-Fi / Handoff / Continuity
+- AirDrop
+- USB ports
+- DRM in Safari (haven't tested other apps but I expect it to work)
+- Sidecar (albeit finnicky at times..)
+
+
+## System Information
+
+<details>
+![](meta/about-mac-screenshot.png)
+![](meta/neofetch-screenshot.png)
+</details>
+
+## Benchmarks
+
+
+## BlackMagic
+
+![](meta/DiskSpeedTest.png)
+
+### GeekBench 5
+
+- CPU https://browser.geekbench.com/v5/cpu/1284447
+- GPU - OpenCL https://browser.geekbench.com/v5/compute/552224
+- GPU - Metal https://browser.geekbench.com/v5/compute/552225
+
+### Cinebench
+
+![](meta/cinebench.png)
+
+### Luxmark
+
+![](meta/luxmark.png)
+
+## USB Ports
+
+Generated a `USBPorts.kext` using Hackintool. As far as I can tell, this covers all the ports on the build and I didn't have to exclude any of them. I know this is more than 15 but somehow it works? 🤷‍♂️
+
+| Ports | Type | Description |
+| --- | --- | --- |
+| HS01 | USB 2 Type C + Switch | Case USB Type-C
+| HS02 | USB 2 Type C + Switch | Rear USB Type-C
+| HS03 | USB 3 | Rear USB 3.1 Gen 2 (red) - right
+| HS04 | USB 3 | Rear USB 3.1 Gen 2 (red) - left
+| HS05 | USB 2 | Rear USB 2 (black) - right
+| HS06 | USB 2 | Rear USB 2 (black) - left
+| HS07 | USB 3 | Rear USB 3.1 Gen 1 (blue) - right
+| HS08 | USB 3 | Rear USB 3.1 Gen 1 (blue) - left
+| HS09 | USB 3 | Front USB 3.1 Gen 1
+| HS11 | Internal connector | NZXT LED Controller
+| HS13 | Internal connector | RGB LED Lightning - Aura Motherboard
+| HS14 | Internal connector | Bluetooth/Wifi - Dell
+| SS01 | USB 3.1 Type C | Case USB Type-C (orientation A)
+| SS02 | USB 3.1 Type C | Case USB Type-C (orientation B)
+| SS03 | USB 3 | Rear USB 3.1 Gen 2 (red) - right
+| SS04 | USB 3 | Rear USB 3.1 Gen 2 (red) - left
+| SS05 | USB 3.1 Type C | Rear USB Type-C (orientation A)
+| SS06 | USB 3.1 Type C | Rear USB Type-C (orientation B)
+| SS07 | USB 3 | Rear USB 3.1 Gen 1 (blue) - right
+| SS08 | USB 3 | Rear USB 3.1 Gen 1 (blue) - left
+| SS09 | USB 3 | Front USB 3.1 Gen 1
