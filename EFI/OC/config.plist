@@ -753,17 +753,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02843130GUJ0PGJA</string>
+			<string>C02003403QXJG361H</string>
 			<key>ROM</key>
 			<data>ESIzAAAA</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMac18,3</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XL6Z6J1GJ</string>
+			<string>C02C4014HX87</string>
 			<key>SystemUUID</key>
-			<string>21D3D730-2D46-4F9D-9CF0-90AA2840D684</string>
+			<string>FED53D2D-BE41-4127-A37E-63041D5269D1</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
