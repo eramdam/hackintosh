@@ -202,6 +202,17 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>layout-id</key>
+				<data>BwAAAA==</data>
+				<key>model</key>
+				<string>SupremeFX S1220A Realtek ALCS1220A</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
 				<key>layout-id</key>
@@ -684,7 +695,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 agdpmod=pikera</string>
+				<string>keepsyms=1 agdpmod=pikera alcid=7</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
