@@ -222,8 +222,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AwCSPg==</data>
-				<key>device-id</key>
-				<data>kT4AAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
@@ -727,7 +725,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 agdpmod=pikera alcid=7</string>
+				<string>keepsyms=1 agdpmod=pikera alcid=7 shikigva=80</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
