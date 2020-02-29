@@ -40,8 +40,10 @@ Type|Item
 ## System Information
 
 <details>
+
 ![](meta/about-mac-screenshot.png)
 ![](meta/neofetch-screenshot.png)
+
 </details>
 
 ## Benchmarks
