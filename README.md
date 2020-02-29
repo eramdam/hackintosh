@@ -7,6 +7,8 @@ Shout out to MykolaG on the r/Hackintosh Discord for their help with [Windows bo
 
 Feel free to re-use this configuration if you have the same CPU + motherboard combo and an AMD GPU. 
 
+**Disclaimer**: You'll obviously want to re-generate new SMBIOS informations and not re-use those in the file as-is!
+
 ## Hardware configuration
 
 [PCPartPicker Part List](https://pcpartpicker.com/list/cqKD7T)
@@ -32,9 +34,13 @@ Type|Item
 - Bluetooth 
 - Wi-Fi / Handoff / Continuity
 - AirDrop
-- USB ports
-- DRM in Safari (haven't tested other apps but I expect it to work)
+- Netflix/DRM in Safari (haven't tested other apps but I expect it to work)
 - Sidecar (albeit finnicky at times..)
+
+## What doesn't work / need to figure out
+
+- USB Ports: still using USBInjectAll right now
+- Audio over HDMI / DisplayPort: had to disable it to fix graphics freezes (see [this thread](https://www.reddit.com/r/hackintosh/comments/dmn84u/rx_vega_64_freezes_system_during_hw_accel_encode/))
 
 
 ## System Information
@@ -69,7 +75,7 @@ Type|Item
 
 ## USB Ports
 
-Generated a `USBPorts.kext` using Hackintool. As far as I can tell, this covers all the ports on the build and I didn't have to exclude any of them. I know this is more than 15 but somehow it works? 🤷‍♂️
+Still need to generate a custom USB map, but here's a list of all the ports used/available in the rig.
 
 | Ports | Type | Description |
 | --- | --- | --- |
