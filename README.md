@@ -28,14 +28,21 @@ Type|Item
 
 ## What works
 
+- iCloud
+- iMessages
+- FaceTime
+- App Store
 - Sleep
 - Audio 
 - Ethernet
 - Bluetooth 
+- Continuity / Handoff
+- Copy-paste across devices — although it's finnicky at times. But it's also like this on my real Macs so I'm not worried.
 - Wi-Fi / Handoff / Continuity
 - AirDrop
 - Netflix/DRM in Safari (haven't tested other apps but I expect it to work)
 - Sidecar (albeit finnicky at times..)
+- Booting into Windows with OpenCore
 
 ## What doesn't work
 
