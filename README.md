@@ -37,10 +37,13 @@ Type|Item
 - Netflix/DRM in Safari (haven't tested other apps but I expect it to work)
 - Sidecar (albeit finnicky at times..)
 
-## What doesn't work / need to figure out
+## What doesn't work
+
+- Audio over HDMI / DisplayPort: had to disable it to fix graphics freezes (see [this thread](https://www.reddit.com/r/hackintosh/comments/dmn84u/rx_vega_64_freezes_system_during_hw_accel_encode/))
+
+## What remains to be done
 
 - USB Ports: still using USBInjectAll right now
-- Audio over HDMI / DisplayPort: had to disable it to fix graphics freezes (see [this thread](https://www.reddit.com/r/hackintosh/comments/dmn84u/rx_vega_64_freezes_system_during_hw_accel_encode/))
 
 
 ## System Information
@@ -57,21 +60,42 @@ Type|Item
 
 ## BlackMagic
 
-![](meta/DiskSpeedTest.png)
+<details>
+
+  ![](meta/DiskSpeedTest.png)
+
+</details>
 
 ### GeekBench 5
 
-- CPU https://browser.geekbench.com/v5/cpu/1284447
-- GPU - OpenCL https://browser.geekbench.com/v5/compute/552224
-- GPU - Metal https://browser.geekbench.com/v5/compute/552225
+- CPU https://browser.geekbench.com/v5/cpu/1334102
+- GPU - OpenCL https://browser.geekbench.com/v5/compute/571768
+- GPU - Metal https://browser.geekbench.com/v5/compute/571773
+
+
+### Intel Power Gadget (during GeekBench CPU test)
+
+<details>
+
+![](meta/intel-power-gadget.png)
+
+</details>
 
 ### Cinebench
 
-![](meta/cinebench.png)
+<details>
+
+  ![](meta/cinebench.png)
+
+</details>
 
 ### Luxmark
 
-![](meta/luxmark.png)
+<details>
+
+  ![](meta/luxmark.png)
+
+</details>
 
 ## USB Ports
 
