@@ -1,23 +1,13 @@
 /*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200110 (64-bit version)
- * Copyright (c) 2000 - 2020 Intel Corporation
+ * For 300-series only. If you can't force enable Legacy RTC in BIOS GUI.
+ * macOS does yet not support AWAC, so we have to force enable RTC. Do not use RTC ACPI patch.
  * 
- * Disassembling to symbolic ASL+ operators
- *
- * Disassembly of iASLkL1d3g.aml, Mon Feb 17 10:42:34 2020
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x00000050 (80)
- *     Revision         0x02
- *     Checksum         0x61
- *     OEM ID           "ACDT"
- *     OEM Table ID     "AWAC"
- *     OEM Revision     0x00000000 (0)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20180105 (538444037)
+ * The Time and Alarm device provides an alternative to the real time clock (RTC), which is defined as a fixed feature hardware device.
+ * The wake timers allow the system to transition from the S3 (or optionally S4/S5) state to S0 state after a time period elapses.
+ * In comparison with the Real Time Clock (RTC) Alarm, the Time and Alarm device provides a larger scale of flexibility in the operation of the wake timers,
+ * and allows the implementation of the time source to be abstracted from the OSPM.
  */
+
 DefinitionBlock ("", "SSDT", 2, "ACDT", "AWAC", 0x00000000)
 {
     External (STAS, IntObj)
@@ -33,4 +23,3 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "AWAC", 0x00000000)
         }
     }
 }
-

@@ -1,28 +1,11 @@
 /*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200110 (64-bit version)
- * Copyright (c) 2000 - 2020 Intel Corporation
- * 
- * Disassembling to symbolic ASL+ operators
- *
- * Disassembly of iASLTBRq5h.aml, Mon Feb 17 10:42:34 2020
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x000000A7 (167)
- *     Revision         0x02
- *     Checksum         0x00
- *     OEM ID           "CpuRef"
- *     OEM Table ID     "CpuPlug"
- *     OEM Revision     0x00003000 (12288)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20180105 (538444037)
+ * XCPM power management compatibility table.
  */
-DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuPlug", 0x00003000)
+DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlug", 0x00003000)
 {
-    External (_SB_.PR00, ProcessorObj)
+    External (_PR_.CPU0, ProcessorObj)
 
-    Scope (\_SB.PR00)
+    Scope (\_PR.CPU0)
     {
         Method (DTGP, 5, NotSerialized)
         {
@@ -65,4 +48,3 @@ DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuPlug", 0x00003000)
         }
     }
 }
-
