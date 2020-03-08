@@ -471,7 +471,7 @@
 				<key>Comment</key>
 				<string>Disable AppleGFXHDA</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleGFXHDA</string>
 				<key>MaxKernel</key>
@@ -725,11 +725,9 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 agdpmod=pikera alcid=7 shikigva=80</string>
+				<string>keepsyms=1 agdpmod=pikera shikigva=80</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
-				<key>prev-lang:kbd</key>
-				<data></data>
+				<data>5wMAAA==</data>
 			</dict>
 		</dict>
 		<key>Block</key>
