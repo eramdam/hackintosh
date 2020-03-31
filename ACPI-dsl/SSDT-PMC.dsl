@@ -1,22 +1,26 @@
 /*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200110 (64-bit version)
- * Copyright (c) 2000 - 2020 Intel Corporation
- * 
- * Disassembling to symbolic ASL+ operators
+ * Intel 300-series PMC support for macOS
  *
- * Disassembly of iASL3A3fK8.aml, Mon Feb 17 10:42:34 2020
+ * Starting from Z390 chipsets PMC (D31:F2) is only available through MMIO.
+ * Since there is no standard device for PMC in ACPI, Apple introduced its
+ * own naming "APP9876" to access this device from AppleIntelPCHPMC driver.
+ * To avoid confusion we disable this device for all other operating systems,
+ * as they normally use another non-standard device with "PNP0C02" HID and
+ * "PCHRESV" UID.
  *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x0000008F (143)
- *     Revision         0x02
- *     Checksum         0x3F
- *     OEM ID           "ACDT"
- *     OEM Table ID     "PMCR"
- *     OEM Revision     0x00001000 (4096)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20180105 (538444037)
+ * On certain implementations, including APTIO V, PMC initialisation is
+ * required for NVRAM access. Otherwise it will freeze in SMM mode.
+ * The reason for this is rather unclear. Note, that PMC and SPI are
+ * located in separate memory regions and PCHRESV maps both, yet only
+ * PMC region is used by AppleIntelPCHPMC:
+ * 0xFE000000~0xFE00FFFF - PMC MBAR
+ * 0xFE010000~0xFE010FFF - SPI BAR0
+ * 0xFE020000~0xFE035FFF - SerialIo BAR in ACPI mode
+ *
+ * PMC device has nothing to do to LPC bus, but is added to its scope for
+ * faster initialisation. If we add it to PCI0, where it normally exists,
+ * it will start in the end of PCI configuration, which is too late for
+ * NVRAM support.
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "PMCR", 0x00001000)
 {
@@ -38,7 +42,6 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "PMCR", 0x00001000)
                     Return (Zero)
                 }
             }
-
             Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
             {
                 Memory32Fixed (ReadWrite,
@@ -49,4 +52,3 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "PMCR", 0x00001000)
         }
     }
 }
-
