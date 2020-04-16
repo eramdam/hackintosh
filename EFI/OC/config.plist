@@ -679,6 +679,8 @@
 				<string>en-US:0</string>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
+				<key>wake-failure</key>
+				<data>AAAAAAA=</data>
 			</dict>
 		</dict>
 		<key>Block</key>
