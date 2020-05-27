@@ -178,16 +178,20 @@
 			<true/>
 			<key>ForceExitBootServices</key>
 			<false/>
-			<key>ProtectCsmRegion</key>
+			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
+			<false/>
+			<key>ProtectUefiServices</key>
 			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
 			<key>SetupVirtualMap</key>
 			<true/>
-			<key>ShrinkMemoryMap</key>
-			<false/>
+			<key>RebuildAppleMemoryMap</key>
+			<true/>
+			<key>SyncRuntimePermissions</key>
+			<true/>
 			<key>SignalAppleOS</key>
 			<false/>
 		</dict>
@@ -490,7 +494,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data></data>
 				<key>Identifier</key>
@@ -581,6 +585,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DisableRtcChecksum</key>
+			<true/>
 			<key>DummyPowerManagement</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
@@ -630,6 +636,8 @@
 		<dict>
 			<key>DisableWatchDog</key>
 			<true/>
+			<key>AppleDebug</key>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
@@ -664,8 +672,10 @@
 			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
+			<key>BootProtect</key>
+			<string>None</string>
 			<key>HaltLevel</key>
-			<integer>2147483648</integer>
+			<real>2147483648</real>
 			<key>Vault</key>
 			<string>Optional</string>
 			<key>ScanPolicy</key>
@@ -776,13 +786,71 @@
 	</dict>
 	<key>UEFI</key>
 	<dict>
+		<key>ReservedMemory</key>
+		<array>
+			<dict>
+				<key>Address</key>
+				<integer>268435456</integer>
+				<key>Comment</key>
+				<string>HD3000: IGPU memory corruption errata</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Size</key>
+				<integer>268435456</integer>
+			</dict>
+		</array>
+		<key>ProtocolOverrides</key>
+		<dict>
+			<key>AppleAudio</key>
+			<false/>
+			<key>AppleBootPolicy</key>
+			<false/>
+			<key>AppleDebugLog</key>
+			<false/>
+			<key>AppleEvent</key>
+			<false/>
+			<key>AppleImageConversion</key>
+			<false/>
+			<key>AppleKeyMap</key>
+			<false/>
+			<key>AppleRtcRam</key>
+			<false/>
+			<key>AppleSmcIo</key>
+			<false/>
+			<key>AppleUserInterfaceTheme</key>
+			<false/>
+			<key>DataHub</key>
+			<false/>
+			<key>DeviceProperties</key>
+			<false/>
+			<key>FirmwareVolume</key>
+			<false/>
+			<key>HashServices</key>
+			<false/>
+			<key>OSInfo</key>
+			<false/>
+			<key>UnicodeCollation</key>
+			<false/>
+		</dict>
+		<key>APFS</key>
+		<dict>
+			<key>EnableJumpstart</key>
+			<true/>
+			<key>HideVerbose</key>
+			<true/>
+			<key>JumpstartHotPlug</key>
+			<false/>
+			<key>MinDate</key>
+			<integer>0</integer>
+			<key>MinVersion</key>
+			<integer>0</integer>
+		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>ApfsDriverLoader.efi</string>
-			<string>FwRuntimeServices.efi</string>
-			<string>VBoxHfs.efi</string>
+			<string>OpenRuntime.efi</string>
+			<string>HfsPlus.efi</string>
 		</array>
 		<key>Audio</key>
 		<dict>
@@ -805,6 +873,8 @@
 		<dict>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
+			<key>KeyFiltering</key>
+			<false/>
 			<key>KeyMergeThreshold</key>
 			<integer>2</integer>
 			<key>KeySupport</key>
@@ -836,6 +906,8 @@
 			<true/>
 			<key>DirectGopRendering</key>
 			<false/>
+			<key>DirectGopCacheMode</key>
+			<string></string>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
