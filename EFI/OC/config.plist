@@ -617,8 +617,6 @@
 			<string>External</string>
 			<key>HideAuxiliary</key>
 			<false/>
-			<key>HideSelf</key>
-			<true/>
 			<key>PickerAttributes</key>
 			<integer>1</integer>
 			<key>PickerAudioAssist</key>
@@ -637,6 +635,8 @@
 			<key>DisableWatchDog</key>
 			<true/>
 			<key>AppleDebug</key>
+			<true/>
+			<key>ApplePanic</key>
 			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
@@ -670,10 +670,12 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>BootProtect</key>
-			<string>None</string>
+			<string>Bootstrap</string>
 			<key>HaltLevel</key>
 			<real>2147483648</real>
 			<key>Vault</key>
@@ -907,8 +909,6 @@
 			<true/>
 			<key>DirectGopRendering</key>
 			<false/>
-			<key>DirectGopCacheMode</key>
-			<string></string>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
@@ -949,11 +949,13 @@
 		<dict>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>TscSyncTimeout</key>
+			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
-			<key>RequestBootVarFallback</key>
+			<key>DeduplicateBootOrder</key>
 			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
