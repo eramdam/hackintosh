@@ -1,11 +1,8 @@
-/*
- * XCPM power management compatibility table.
- */
-DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlug", 0x00003000)
-{
-    External (_PR_.CPU0, ProcessorObj)
 
-    Scope (\_PR.CPU0)
+DefinitionBlock ("", "SSDT", 2, "CORP", "CpuPlug", 0x00003000)
+{
+    External (_SB_.PR00, ProcessorObj)
+    Scope (\_SB_.PR00)
     {
         Method (DTGP, 5, NotSerialized)
         {
@@ -21,21 +18,18 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlug", 0x00003000)
                             }
                         Return (One)
                     }
-
                     If ((Arg2 == One))
                     {
                         Return (One)
                     }
                 }
             }
-
             Arg4 = Buffer (One)
                 {
                      0x00                                             // .
                 }
             Return (Zero)
         }
-
         Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
         {
             Local0 = Package (0x02)
