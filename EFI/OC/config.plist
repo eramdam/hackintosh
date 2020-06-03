@@ -644,6 +644,8 @@
 			<integer>0</integer>
 			<key>Target</key>
 			<integer>0</integer>
+			<key>SysReport</key>
+			<false/>
 		</dict>
 		<key>Entries</key>
 		<array>
