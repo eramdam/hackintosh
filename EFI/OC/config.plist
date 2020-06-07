@@ -797,7 +797,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
-			<false/>
+			<true/>
 			<key>MLB</key>
 			<string>C02944300CDJ0PG1M</string>
 			<key>ROM</key>
