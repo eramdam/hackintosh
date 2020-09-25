@@ -4,6 +4,8 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>Delete</key>
+		<array/>
 		<key>Add</key>
 		<array>
 			<dict>
@@ -162,6 +164,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -175,7 +179,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<true/>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -183,7 +187,7 @@
 			<key>ProtectSecureBoot</key>
 			<false/>
 			<key>ProtectUefiServices</key>
-			<false/>
+			<true/>
 			<key>ProvideCustomSlide</key>
 			<true/>
 			<key>SetupVirtualMap</key>
@@ -698,14 +702,18 @@
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>EnablePassword</key>
+			<false/>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BlacklistAppleUpdate</key>
-			<true/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>BootProtect</key>
@@ -758,6 +766,8 @@
 				<data>Rg==</data>
 				<key>wake-failure</key>
 				<data>AAAAAAA=</data>
+				<key>run-efi-updater</key>
+				<string>No</string>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -812,7 +822,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
-			<true/>
+			<false/>
 			<key>MLB</key>
 			<string>C02944300CDJ0PG1M</string>
 			<key>ROM</key>
@@ -852,6 +862,12 @@
 		</array>
 		<key>ProtocolOverrides</key>
 		<dict>
+			<key>AppleSecureBoot</key>
+			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
+			<key>AppleFramebufferInfo</key>
+			<false/>
 			<key>AppleAudio</key>
 			<false/>
 			<key>AppleBootPolicy</key>
@@ -885,6 +901,8 @@
 		</dict>
 		<key>APFS</key>
 		<dict>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>EnableJumpstart</key>
 			<true/>
 			<key>HideVerbose</key>
@@ -944,6 +962,8 @@
 		</dict>
 		<key>Output</key>
 		<dict>
+			<key>UgaPassThrough</key>
+			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>ConsoleMode</key>
