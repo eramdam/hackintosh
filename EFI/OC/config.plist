@@ -706,6 +706,8 @@
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>SecureBootModel</key>
+			<string>Default</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>DmgLoading</key>
