@@ -611,6 +611,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 			<key>LegacyCommpage</key>
 			<false/>
 			<key>AppleCpuPmCfgLock</key>
@@ -823,6 +825,8 @@
 		<true/>
 		<key>Generic</key>
 		<dict>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>MemoryFormFactor</key>
 			<string>Auto</string>
 			<key>AdviseWindows</key>
@@ -966,6 +970,8 @@
 		</dict>
 		<key>Output</key>
 		<dict>
+			<key>ForceResolution</key>
+			<false/>
 			<key>UgaPassThrough</key>
 			<false/>
 			<key>TextRenderer</key>
