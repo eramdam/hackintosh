@@ -707,13 +707,13 @@
 		<key>Security</key>
 		<dict>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>j137</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>ApECID</key>
-			<integer>0</integer>
+			<integer>9223372036854775807</integer>
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>AllowSetDefault</key>
