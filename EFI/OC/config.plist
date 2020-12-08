@@ -707,7 +707,7 @@
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>BootProtect</key>
-			<string>Bootstrap</string>
+			<string>None</string>
 			<key>HaltLevel</key>
 			<real>2147483648</real>
 			<key>Vault</key>
