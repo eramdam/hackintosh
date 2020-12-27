@@ -177,11 +177,9 @@ In order to have Sidecar working you need to:
 ```
 Primary Display [PEG]
 iGPU Multi-Monitor [Enabled]
-DVMT Pre-Allocated [128M]
+DVMT Pre-Allocated [64M]
 RC6(Render Standby) [Disabled]
 ```
-
-- I _think_ 64M for DVMT should work too but I would have to try again
 
 - Make sure you are using [the right platform-id](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#deviceproperties) (`0300913E`)
   - See [config.plist](https://github.com/eramdam/hackintosh/blob/6b10853ca3538483986979ca45ea87b4128992fb/EFI/OC/config.plist#L185-L191)
