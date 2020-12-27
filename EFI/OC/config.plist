@@ -707,9 +707,9 @@
 			<key>SerialInit</key>
 			<false/>
 			<key>DisableWatchDog</key>
-			<true/>
+			<false/>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisplayDelay</key>
@@ -717,7 +717,7 @@
 			<key>DisplayLevel</key>
 			<integer>0</integer>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>3</integer>
 			<key>SysReport</key>
 			<false/>
 		</dict>
