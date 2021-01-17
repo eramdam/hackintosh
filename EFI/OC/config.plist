@@ -687,6 +687,8 @@
 			<string>None</string>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerAttributes</key>
@@ -1026,6 +1028,8 @@
 			<string>Auto</string>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 		</dict>
 		<key>Output</key>
 		<dict>
@@ -1064,8 +1068,6 @@
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>UnblockFsConnect</key>
