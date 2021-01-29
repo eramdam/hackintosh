@@ -17,6 +17,7 @@
 
 # Changelog
 
+- 2021/01/29: Updated to OpenCore 0.6.5
 - 2020/12/16: Updated to OpenCore 0.6.4 for macOS 11.1
 
 # Hackintosh
