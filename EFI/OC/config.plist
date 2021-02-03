@@ -681,6 +681,8 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>LauncherOption</key>
+			<string>Full</string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -719,7 +721,7 @@
 			<key>DisplayLevel</key>
 			<integer>0</integer>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>67</integer>
 			<key>SysReport</key>
 			<false/>
 		</dict>
@@ -766,8 +768,6 @@
 			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
-			<key>BootProtect</key>
-			<string>Bootstrap</string>
 			<key>Vault</key>
 			<string>Optional</string>
 			<key>HaltLevel</key>
@@ -818,7 +818,7 @@
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>boot-args</key>
-				<string>keepsyms=1 agdpmod=pikera debug=0x100 alcid=7 shikigva=80 brcmfx-driver=2</string>
+				<string>keepsyms=1 agdpmod=pikera debug=0x100 alcid=7 shikigva=80 brcmfx-driver=2 -v</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
