@@ -160,6 +160,7 @@ Feel free to re-use this configuration if you have the same CPU + motherboard co
 ## What doesn't work / didn't test
 
 - Audio over HDMI / DisplayPort
+- Apple Watch unlock: works right after being enabled but then fails after sleep/watch being out of range.
 
 ## Configuration quirks
 
