@@ -15,7 +15,7 @@ NOTE: This is specifically tied to my own configuration and I'm mainly documenti
    4. `OpenCore-0.6.6-RELEASE/X64/EFI/OC/Drivers/OpenRuntime.efi` -> `EFI/EFI/OC/Drivers/OpenRuntime.efi`
    5. `OpenCore-0.6.6-RELEASE/X64/EFI/OC/OpenCore.efi` -> `EFI/EFI/OC/OpenCore.efi`
 6. Set `Misc -> Boot -> LauncherOption` to `Full`
-7. Reboot into the USB from the first step
+7. Reboot into the OpenShell USB from the first step
 8. End up in OpenShell
 9. Adjust resolution by typing `mode` and then `mode col row` where `col` and `row` correspond to one of the modes listed
 10. Cycle through volumes by typing `FS0:`,`FS1:`, `FS2:`.. until we find macOS' EFI partition (in my situation it's `FS6:`)
