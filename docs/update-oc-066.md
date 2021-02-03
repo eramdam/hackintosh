@@ -23,3 +23,4 @@ NOTE: This is specifically tied to my own configuration and I'm mainly documenti
 12. Boot macOS normally
 13. Reboot
 14. The BIOS should have an `OpenCore` entry corresponding to the boot volume
+15. Optional: you should be able to safely remove `EFI/BOOT/BOOTx64.efi` from the boot volume
