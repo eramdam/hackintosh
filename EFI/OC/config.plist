@@ -669,6 +669,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -683,6 +685,8 @@
 		<dict>
 			<key>LauncherOption</key>
 			<string>Full</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -713,7 +717,7 @@
 			<key>DisableWatchDog</key>
 			<false/>
 			<key>AppleDebug</key>
-			<false/>
+			<true/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisplayDelay</key>
@@ -890,6 +894,8 @@
 			<string>Auto</string>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>MLB</key>
 			<string>C02944300CDJ0PG1M</string>
 			<key>ROM</key>
@@ -997,8 +1003,6 @@
 			<integer>5</integer>
 			<key>KeyFiltering</key>
 			<false/>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 			<key>KeySupport</key>
 			<true/>
 			<key>KeySupportMode</key>
