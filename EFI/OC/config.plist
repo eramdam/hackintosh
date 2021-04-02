@@ -694,7 +694,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Modern</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerAttributes</key>
