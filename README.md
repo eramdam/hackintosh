@@ -17,6 +17,7 @@
 
 # Changelog
 
+- 2021/04/11: Updated to OpenCore 0.6.8 and macOS 11.2.3
 - 2021/02/02: Updated to OpenCore 0.6.6 and macOS 11.2
   - [Update instructions](./docs/update-oc-066.md)
 - 2021/01/29: Updated to OpenCore 0.6.5
