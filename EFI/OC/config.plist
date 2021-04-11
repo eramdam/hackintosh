@@ -44,6 +44,10 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_Q11 to XQ11</string>
 				<key>Count</key>
@@ -70,6 +74,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Base</key>
+				<string></string>
 				<key>Comment</key>
 				<string>_Q12 to XQ12</string>
 				<key>Count</key>
@@ -141,6 +149,8 @@
 			<integer>0</integer>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
+			<key>ForceBooterSignature</key>
+			<false/>
 			<key>DevirtualiseMmio</key>
 			<true/>
 			<key>DisableSingleUser</key>
@@ -884,6 +894,8 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 		<key>CustomMemory</key>
 		<false/>
 		<key>Generic</key>
@@ -949,8 +961,6 @@
 			<false/>
 			<key>AppleDebugLog</key>
 			<false/>
-			<key>AppleEvent</key>
-			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
@@ -991,6 +1001,21 @@
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>0</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 		<key>Drivers</key>
 		<array>
 			<string>OpenRuntime.efi</string>
@@ -1020,6 +1045,8 @@
 		<dict>
 			<key>AudioCodec</key>
 			<integer>0</integer>
+			<key>ResetTrafficClass</key>
+			<false/>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
 			<key>AudioOut</key>
@@ -1043,6 +1070,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+			<key>GopPassThrough</key>
+			<false/>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>Resolution</key>
@@ -1066,6 +1095,10 @@
 		<dict>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ActivateHpetSupport</key>
+			<false/>
+			<key>DisableSecurityPolicy</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
