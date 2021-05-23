@@ -17,6 +17,7 @@
 
 # Changelog
 
+- 2021/05/23: Updated to OpenCore 0.6.8 and macOS 11.3.1
 - 2021/04/11: Updated to OpenCore 0.6.8 and macOS 11.2.3
 - 2021/02/02: Updated to OpenCore 0.6.6 and macOS 11.2
   - [Update instructions](./docs/update-oc-066.md)
@@ -34,108 +35,66 @@ Feel free to re-use this configuration if you have the same CPU + motherboard co
 
 ## Hardware configuration
 
-[PCPartPicker Part List](https://pcpartpicker.com/list/cqKD7T)
+[PCPartPicker Part List](https://pcpartpicker.com/list/JbnZy4)
 
 <details>
-  <table>
+  <a href="https://pcpartpicker.com/list/JbnZy4">PCPartPicker Part List</a>
+  <table class="pcpp-part-list">
     <thead>
       <tr>
-        <th style="text-align: left">Type</th>
-        <th style="text-align: left">Item</th>
+        <th>Type</th>
+        <th>Item</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="text-align: left"><strong>CPU</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/jHZFf7/intel-core-i9-9900k-36ghz-8-core-processor-bx80684i99900k"
-            >Intel Core i9-9900K 3.6 GHz 8-Core Processor</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">CPU</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/jHZFf7/intel-core-i9-9900k-36ghz-8-core-processor-bx80684i99900k">Intel Core i9-9900K 3.6 GHz 8-Core Processor</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>CPU Cooler</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/PVfFf7/nzxt-kraken-x53-7311-cfm-liquid-cpu-cooler-rl-krx53-01"
-            >NZXT Kraken X53 73.11 CFM Liquid CPU Cooler</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">CPU Cooler</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/PVfFf7/nzxt-kraken-x53-7311-cfm-liquid-cpu-cooler-rl-krx53-01">NZXT Kraken X53 73.11 CFM Liquid CPU Cooler</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Motherboard</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/Tmprxr/asus-rog-strix-z390-i-gaming-mini-itx-lga1151-motherboard-rog-strix-z390-i-gaming"
-            >Asus ROG STRIX Z390-I GAMING Mini ITX LGA1151 Motherboard</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Motherboard</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/Tmprxr/asus-rog-strix-z390-i-gaming-mini-itx-lga1151-motherboard-rog-strix-z390-i-gaming">Asus ROG STRIX Z390-I GAMING Mini ITX LGA1151 Motherboard</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Memory</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/L7qhP6/corsair-vengeance-rgb-pro-32gb-2-x-16gb-ddr4-3200-memory-cmw32gx4m2c3200c16w"
-            >Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3200 Memory</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Memory</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/L7qhP6/corsair-vengeance-rgb-pro-32gb-2-x-16gb-ddr4-3200-memory-cmw32gx4m2c3200c16w">Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3200 CL16 Memory</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Storage</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/JLdxFT/samsung-970-evo-10tb-m2-2280-solid-state-drive-mz-v7e1t0baw"
-            >Samsung 970 Evo 1 TB M.2-2280 NVME Solid State Drive</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Storage</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/JLdxFT/samsung-970-evo-10tb-m2-2280-solid-state-drive-mz-v7e1t0baw">Samsung 970 Evo 1 TB M.2-2280 NVME Solid State Drive</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Storage</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/JLdxFT/samsung-970-evo-10tb-m2-2280-solid-state-drive-mz-v7e1t0baw"
-            >Samsung 970 Evo 1 TB M.2-2280 NVME Solid State Drive</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Storage</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/JLdxFT/samsung-970-evo-10tb-m2-2280-solid-state-drive-mz-v7e1t0baw">Samsung 970 Evo 1 TB M.2-2280 NVME Solid State Drive</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Video Card</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/3YTzK8/sapphire-radeon-rx-5700-xt-8-gb-pulse-video-card-11293-01-20g"
-            >Sapphire Radeon RX 5700 XT 8 GB PULSE Video Card</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Case</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/x7hmP6/nzxt-h210-mini-itx-tower-case-ca-h210b-w1">NZXT H210 Mini ITX Tower Case</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Case</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/x7hmP6/nzxt-h210-mini-itx-tower-case-ca-h210b-w1"
-            >NZXT H210 Mini ITX Tower Case</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Power Supply</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/MfJwrH/evga-power-supply-220g20750xr">EVGA G2 750 W 80+ Gold Certified Fully Modular ATX Power Supply</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Power Supply</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/9q4NnQ/evga-power-supply-220g20650y1"
-            >EVGA SuperNOVA G2 650 W 80+ Gold Certified Fully Modular ATX Power
-            Supply</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Custom</td>
+        <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/fM4NnQ/oem-dell-wireless-dw1560-80211ac-broadcom-bcm94352z-m2-ngff-wifi-card-6xryc">OEM Dell Wireless DW1560 802.11ac Broadcom BCM94352Z M.2 NGFF WIFI Card 6XRYC</a></td>
       </tr>
       <tr>
-        <td style="text-align: left"><strong>Custom</strong></td>
-        <td style="text-align: left">
-          <a
-            href="https://pcpartpicker.com/product/fM4NnQ/oem-dell-wireless-dw1560-80211ac-broadcom-bcm94352z-m2-ngff-wifi-card-6xryc"
-            >OEM Dell Wireless DW1560 802.11ac Broadcom BCM94352Z M.2 NGFF WIFI
-            Card 6XRYC</a
-          >
-        </td>
+        <td class="pcpp-part-list-type">Video Card</td>
+        <td class="pcpp-part-list-item">ASUS AMD Dual Radeon RX 5500 XT</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="pcpp-part-list-price-note">Prices include shipping, taxes, rebates, and discounts</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="pcpp-part-list-price-note">Generated by <a href="https://pcpartpicker.com">PCPartPicker</a> 2021-05-23 03:43 EDT-0400</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
