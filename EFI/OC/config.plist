@@ -649,6 +649,8 @@
 		<dict>
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>ForceSecureBootScheme</key>
@@ -756,10 +758,14 @@
 				<string>CustomOS</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
+				<key>Flavour</key>
+				<string>Auto</string>
 			</dict>
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>AllowToggleSip</key>
+			<true/>
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>PasswordHash</key>
@@ -800,12 +806,34 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>OpenShell:UEFIShell:Shell</string>
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Memory testing utility</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>MemTest</string>
+				<key>Name</key>
+				<string>memtest86</string>
+				<key>Path</key>
+				<string>memtest86/BOOTX64.efi</string>
+				<key>RealPath</key>
+				<true/>
 				<key>TextMode</key>
 				<false/>
 			</dict>
@@ -831,6 +859,8 @@
 			<dict>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>boot-args</key>
 				<string>keepsyms=1 agdpmod=pikera debug=0x100 alcid=7 shikigva=80 brcmfx-driver=2</string>
 				<key>csr-active-config</key>
@@ -854,6 +884,7 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
+				<string>ForceDisplayRotationInEFI</string>
 				<string>boot-args</string>
 			</array>
 		</dict>
@@ -902,10 +933,10 @@
 		<dict>
 			<key>ProcessorType</key>
 			<integer>0</integer>
+			<key>AdviseFeatures</key>
+			<false/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
-			<key>AdviseWindows</key>
-			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
@@ -950,6 +981,8 @@
 		<key>ProtocolOverrides</key>
 		<dict>
 			<key>AppleSecureBoot</key>
+			<false/>
+			<key>AppleEg2Info</key>
 			<false/>
 			<key>AppleImg4Verification</key>
 			<false/>
@@ -1071,7 +1104,7 @@
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>Resolution</key>
