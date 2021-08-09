@@ -1094,6 +1094,8 @@
 		<true/>
 		<key>AppleInput</key>
 		<dict>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 			<key>AppleEvent</key>
 			<string>Builtin</string>
 			<key>CustomDelays</key>
