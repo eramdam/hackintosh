@@ -1111,9 +1111,46 @@
 		</dict>
 		<key>Drivers</key>
 		<array>
-			<string>OpenRuntime.efi</string>
-			<string>OpenHfsPlus.efi</string>
-			<string>OpenCanopy.efi</string>
+			<dict>
+				<key>Path</key>
+				<string>ext4_x64.efi</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>btrfs_x64.efi</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1186,6 +1223,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>ForceOcWriteFlash</key>
+			<false/>
 			<key>EnableVectorAcceleration</key>
 			<false/>
 			<key>ForgeUefiSupport</key>
