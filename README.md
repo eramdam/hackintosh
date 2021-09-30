@@ -178,7 +178,7 @@ I don't really know why, but as far as I can tell, enabling Power Nap in `Energy
 | [x]     | HS07  | USB 3                 | Rear USB 3.1 Gen 1 (blue) - right    |
 | [x]     | HS08  | USB 3                 | Rear USB 3.1 Gen 1 (blue) - left     |
 | [_]     | HS09  | USB 3                 | Front USB 3.1 Gen 1                  |
-| [_]     | HS10  | ???                   | ???                                  |
+| [_]     | HS10  | USB 3                 | Front USB 3.1 Gen 1                  |
 | [x]     | HS11  | Internal connector    | NZXT LED Controller                  |
 | [x]     | HS13  | Internal connector    | RGB LED Lightning - Aura Motherboard |
 | [x]     | HS14  | Internal connector    | Bluetooth/Wifi - Dell                |
@@ -191,3 +191,4 @@ I don't really know why, but as far as I can tell, enabling Power Nap in `Energy
 | [x]     | SS07  | USB 3                 | Rear USB 3.1 Gen 1 (blue) - right    |
 | [_]     | SS08  | USB 3                 | Rear USB 3.1 Gen 1 (blue) - left     |
 | [x]     | SS09  | USB 3                 | Front USB 3.1 Gen 1                  |
+| [ ]     | SS10  | USB 3                 | Front USB 3.1 Gen 1                  |
