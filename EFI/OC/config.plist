@@ -831,7 +831,7 @@
 			<key>BlacklistAppleUpdate</key>
 			<true/>
 			<key>SecureBootModel</key>
-			<string>j137</string>
+			<string>Default</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>DmgLoading</key>
@@ -1138,8 +1138,12 @@
 				<false/>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Path</key>
 				<string>btrfs_x64.efi</string>
 				<key>Enabled</key>
@@ -1148,6 +1152,8 @@
 				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
 				<key>Enabled</key>
@@ -1156,6 +1162,8 @@
 				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 				<key>Enabled</key>
@@ -1164,6 +1172,8 @@
 				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 				<key>Enabled</key>
