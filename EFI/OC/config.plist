@@ -1167,7 +1167,7 @@
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Arguments</key>
 				<string></string>
 			</dict>
