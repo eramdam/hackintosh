@@ -199,6 +199,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>ResizeAppleGpuBars</key>
+			<integer>0</integer>
 			<key>AllowRelocationBlock</key>
 			<false/>
 			<key>ProvideMaxSlide</key>
@@ -930,8 +932,6 @@
 			<dict>
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
-				<key>UIScale</key>
-				<data>AQ==</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
@@ -957,7 +957,6 @@
 			</array>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
-				<string>UIScale</string>
 				<string>DefaultBackgroundColor</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -1224,6 +1223,10 @@
 		</dict>
 		<key>Output</key>
 		<dict>
+			<key>ReconnectGraphicsOnConnect</key>
+			<false/>
+			<key>UIScale</key>
+			<integer>1</integer>
 			<key>ForceResolution</key>
 			<false/>
 			<key>UgaPassThrough</key>
@@ -1253,6 +1256,10 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>EnableVmx</key>
+			<false/>
+			<key>ResizeGpuBars</key>
+			<integer>0</integer>
 			<key>ForceOcWriteFlash</key>
 			<false/>
 			<key>EnableVectorAcceleration</key>
