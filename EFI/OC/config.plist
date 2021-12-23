@@ -401,9 +401,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>BundlePath</key>
-				<string>BrcmBluetoothInjector.kext</string>
+				<string>BlueToolFixup.kext</string>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
