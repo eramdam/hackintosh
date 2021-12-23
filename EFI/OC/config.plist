@@ -1258,8 +1258,6 @@
 		<dict>
 			<key>EnableVmx</key>
 			<false/>
-			<key>ResizeGpuBars</key>
-			<integer>0</integer>
 			<key>ForceOcWriteFlash</key>
 			<false/>
 			<key>EnableVectorAcceleration</key>
