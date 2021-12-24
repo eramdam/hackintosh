@@ -18,6 +18,7 @@
 # Changelog
 
 - 2021/12/23: Updated to macOS 12.1 with OpenCore 0.7.6
+  - See https://dortania.github.io/OpenCore-Install-Guide/extras/monterey.html
   - Changed the macOS drive a WD_BLACK because of the TRIM issues with the 970 EVO (see https://github.com/dortania/bugtracker/issues/192)
 - 2021/05/23: Updated to OpenCore 0.6.8 and macOS 11.3.1
 - 2021/04/11: Updated to OpenCore 0.6.8 and macOS 11.2.3
